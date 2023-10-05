@@ -1,32 +1,42 @@
 .body{
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Century Gothic", Arial, sans-serif;
 }
 
 h1{
     font-weight: bold;
     font-size: x-large;
     color: mediumseagreen;
+    font-family: "Century Gothic", Arial, sans-serif;
 }
 
-h2{
+h2 {
     font-weight: bold;
     color: mediumseagreen;
     font-size: x-large;
+    font-family: "Century Gothic", Arial, sans-serif;
 }
 
-h3{
-    color:dodgerblue;
-}
 h2.overview{
     font-weight: bold;
     color: mediumseagreen;
     font-size: x-large;
+    font-family: "Century Gothic", Arial, sans-serif;
 }
 
 nav.overview-list{
     color: darkcyan;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+h3{
+    color:dodgerblue;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 nav.overview-list:hover{
     color: aqua;
+}
+
+section.topic{
+    font-family: "Century Gothic";
 }
