@@ -2,10 +2,21 @@
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
+
+ul li::marker{
+    list-style-type: square;
+}
+
+
+
 h1{
     font-weight: bold;
     font-size: x-large;
     color: mediumseagreen;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+p.subheading{
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
@@ -23,20 +34,50 @@ h2.overview{
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
+h3{
+    color:dodgerblue;
+    font-family: "Century Gothic", Arial, sans-serif
+}
+
 nav.overview-list{
-    color: darkcyan;
+    color: violet;
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
-h3{
-    color:dodgerblue;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-nav.overview-list:hover{
-    color: aqua;
-}
-
 section.topic{
-    font-family: "Century Gothic";
+    font-family: "Century Gothic", Arial, sans-serif;
 }
+
+/*NAVBAR*/
+.navbar{
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navbar{
+    float: left;
+}
+
+li.navbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navbar a:hover{
+    background-color: #111;
+}
+
+.active {
+    background-color: mediumseagreen;
+}
+
