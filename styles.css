@@ -2,13 +2,6 @@
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
-
-ul li::marker{
-    list-style-type: square;
-}
-
-
-
 h1{
     font-weight: bold;
     font-size: x-large;
@@ -48,7 +41,7 @@ section.topic{
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
-/*NAVBAR*/
+/*BEGIN NAVBAR*/
 .navbar{
     font-family: "Century Gothic", Arial, sans-serif;
 }
@@ -80,4 +73,4 @@ li.navbar a:hover{
 .active {
     background-color: mediumseagreen;
 }
-
+/*NAVBAR END*/
