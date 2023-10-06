@@ -78,3 +78,10 @@ li.navbar a:hover{
 .code{
     font-family: Consolas, Arial, sans-serif;
 }
+
+pre{
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
