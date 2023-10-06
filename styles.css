@@ -66,11 +66,12 @@ li.navbar a{
     text-decoration: none;
 }
 
+/* Navbar Hover - changes the hover color for the page selection */
 li.navbar a:hover{
     background-color: #111;
 }
 
-/* Sectionbar Hover - changes the hover color for the sections*/
+/* Sectionbar Hover - changes the hover color for the sections */
 li.sectionbar a:hover{
     background-color: #1aceb9;
 }
@@ -88,13 +89,7 @@ li.sectionbar a:hover{
 
 /*NAVBAR END*/
 
+/* Style for a cool code look */
 .code{
     font-family: Consolas, Arial, sans-serif;
-}
-
-pre{
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0;
 }
