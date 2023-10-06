@@ -39,9 +39,11 @@
             <hr>
             <h3>HTML Headings</h3>
             <ul>
+                <li>HTML headings are titles or subtitles that you want to display on a webpage.</li>
                 <li>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</li>
                 <li>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading:</li>
                 <p class="code"> &lt;h1&gt;This is heading 1&lt;/h1&gt; <br> &lt;h2&gt;This is heading 2&lt;/h2&gt; <br> &lt;h3&gt;This is heading 3&lt;/h3&gt;</p>
+                <li>&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</li>
             </ul>
             <hr>
             <h3>HTML Paragraphs</h3>
@@ -49,10 +51,14 @@
                 <li>HTML paragraphs are defined with the &lt;p&gt; tag:</li>
                 <p class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
                 <p class="code">&lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
+                <li>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</li>
             </ul>
             <hr>
             <h3>HTML Links</h3>
             <ul>
+                <li>HTML links are hyperlinks.</li>
+                <li>You can click on a link and jump to another document.</li>
+                <li>When you move the mouse over a link, the mouse arrow will turn into a little hand.</li>
                 <li>HTML links are defined with the &lt;a&gt; tag:</li>
                 <p class="code"> &lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</p>
                 <li>The link's destination is specified in the href attribute.</li>
@@ -61,9 +67,24 @@
             <hr>
             <h3>HTML Images</h3>
             <ul>
+                <li>Images can improve the design and the appearance of a web page.</li>
+                <li>The HTML &lt;img&gt; tag is used to embed an image in a web page.</li>
+                <li>Images are not technically inserted into a web page; images are linked to web pages.</li>
+                <li>The &lt;img&gt; tag creates a holding space for the referenced image.</li>
+                <li>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</li>
+                <li>The &lt;img&gt; tag has two required attributes:</li>
+                <p>1. src - Specifies the path to the image</p>
+                <p>2. alt - Specifies an alternate text for the image</p>
                 <li>HTML images are defined with the &lt;img&gt; tag.</li>
                 <li>The source file (src), alternative text (alt), width, and height are provided as attributes:</li>
-                <p class="code"> &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</p>
+                <p class="code"> &lt;img src="cat.jpg" alt="Cats.com" width="104" height="142"&gt;</p>
+                <li>Syntax:</li>
+                <p class="code"> &lt;img src="url" alt="alternatetext"&gt; </p>
+                <li>To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag:</li>
+                <p class="code"> &lt;a href="default.asp"&gt; <br>
+                    &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt; <br>
+                &lt;/a&gt;
+                </p>
             </ul>
             <hr>
             <h3>HTML Attributes</h3>
@@ -73,8 +94,19 @@
                 <li>Attributes provide additional information about elements</li>
                 <li>Attributes are always specified in the start tag</li>
                 <li>Attributes usually come in name/value pairs like: name="value"</li>
-
             </ul>
+            <hr>
+            <h3>HTML Comments</h3>
+            <ul>
+                <li>HTML comments are not displayed in the browser, but they can help document your HTML source code.</li>
+                <li>Comments can be used to hide content.</li>
+                <li>This can be helpful if you hide content temporarily.</li>
+                <li>There are two ways to comment:</li>
+
+                <p class="code">1.: <br>&lt;!-- Write your comments here --&gt;</p>
+                <p class="code">2.: <br>/* <br> Write your comments here <br> */</p>
+            </ul>
+            <hr>
         </section>
 
         <section class="topic" id="css">
