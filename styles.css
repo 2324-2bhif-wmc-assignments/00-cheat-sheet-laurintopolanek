@@ -74,3 +74,7 @@ li.navbar a:hover{
     background-color: mediumseagreen;
 }
 /*NAVBAR END*/
+
+.code{
+    font-family: Consolas, Arial, sans-serif;
+}
