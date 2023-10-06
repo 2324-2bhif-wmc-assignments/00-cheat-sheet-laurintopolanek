@@ -70,9 +70,22 @@ li.navbar a:hover{
     background-color: #111;
 }
 
-.active {
+/* Sectionbar Hover - changes the hover color for the sections*/
+li.sectionbar a:hover{
+    background-color: #1aceb9;
+}
+
+/* Mark the current page as active */
+.active{
     background-color: mediumseagreen;
 }
+
+/* Fixes the top navigation bar */
+.fixed{
+    position: sticky;
+    top: 0;
+}
+
 /*NAVBAR END*/
 
 .code{
