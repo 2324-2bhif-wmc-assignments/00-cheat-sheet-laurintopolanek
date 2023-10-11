@@ -163,7 +163,95 @@
                 <li>Comments can be multi-line comments and/or single-line comments.</li>
             </ul>
             <hr>
-
+            <h3>CSS Colors</h3>
+            <hr>
+            <ul>
+                <li>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</li>
+                <li>The syntax for Colors:</li>
+                <p class="code">&lt;p style="color:DodgerBlue;">This is DodgerBlue/&lt;/p&gt;</p>
+                <li>A few Examples for colors: </li>
+                <li class="Tomato">Tomato</li>
+                <li class="DodgerBlue">DodgerBlue</li>
+                <li class="MediumSeaGreen">MediumSeaGreen</li>
+            </ul>
+            <hr>
+            <h3>CSS Backgrounds</h3>
+            <hr>
+            <ul>
+                <li>The CSS background properties are used to add background effects for elements.</li>
+                <li>Set a background color:</li>
+                <p class="code">body {  <br>
+                    background-color: lightblue; <br>
+                    }</p>
+                <li>Set a background image:</li>
+                <p class="code">body { <br>
+                    background-image: url("paper.gif"); <br>
+                    }</p>
+                <hr>
+                <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
+                <li>Some images should be repeated only horizontally or vertically, or they will look strange.</li>
+                <li>If the image above is repeated only horizontally, the background will look better:</li>
+                <p class="code">body { <br>
+                    background-image: url("gradient_bg.png"); <br>
+                    background-repeat: repeat-x; <br>
+                    }</p>
+                <hr>
+                <li>The background-position property is used to specify the position of the background image.</li>
+                <li>Example to fix the position on the right top:</li>
+                <p class="code">body { <br>
+                    background-image: url("img_tree.png"); <br>
+                    background-repeat: no-repeat; <br>
+                    background-position: right top; <br>
+                    }</p>
+            </ul>
+            <hr>
+            <h3>CSS Text</h3>
+            <hr>
+            <ul>
+                <li>The color property is used to set the color of the text. The color is specified by:</li>
+                <ul>
+                    <li>a color name - like "red"</li>
+                    <li>a HEX value - like "#ff0000"</li>
+                    <li>an RGB value - like "rgb(255,0,0)"</li>
+                </ul>
+                <hr>
+                <li>The text-align property is used to set the horizontal alignment of a text.</li>
+                <li>A text can be left or right aligned, centered, or justified.</li>
+                <li>Example of text-align:</li>
+                <p class="code">h1 { <br>
+                    text-align: center; <br>
+                    }</p>
+                <li>The vertical-align property sets the vertical alignment of an element.</li>
+                <p class="code">img.a { <br>
+                    vertical-align: baseline;
+                    }</p>
+                <hr>
+                <li>When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</li>
+                <p class="code">div { <br>
+                    text-align: justify; <br>
+                    }</p>
+                <hr>
+                <li>The text-decoration-line property is used to add a decoration line to text.</li>
+                <li>You can combine more than one value, like overline and underline to display lines both over and under a text.</li>
+                <p class="code">h1 { <br>
+                    text-decoration-line: overline; <br>
+                    }</p>
+                <hr>
+                <li>The text-transform property is used to specify uppercase and lowercase letters in a text.</li>
+                <li>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</li>
+                <p class="code">p.uppercase { <br>
+                    text-transform: uppercase; <br>
+                    }
+                </p>
+            </ul>
+            <hr>
+            <h3>CSS Fonts</h3>
+            <hr>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <h3>What is CSS?</h3>
             <ul>
                 <li>CSS stands for Cascading Style Sheets</li>
