@@ -248,9 +248,91 @@
             <h3>CSS Fonts</h3>
             <hr>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Difference Between Serif ans Sans serif:</li>
+                <li>Serif: small stroke at the edges of each letter (create formality and elegance) </li>
+                <li>Sans-Serif: clean lines (modern and minimalistic look) </li>
+                <img src="assets/images/serif_sansserif.jpg" width="270"/>
+                <hr>
+                <li>In CSS there are five generic font families:</li>
+                <li>The font-family property is used to specify the font of a text. The font-familiy property normally holds multiple fonts ("fallback" system) to ensure maximum compatability between browsers/operating systems. </li>
+                <hr>
+                <li>The font-style property most commonly use is to specify italic text. The property has the three values: normal, oblique and italic. (text is shown normally; the text is "leaning"; the text is shown in italics) </li>
+                <hr>
+                <li>The font-size property sets the size of the text.</li>
+                <li>The font size can be absolute or relative.</li>
+                <li>Absolute: sets the text to a specific size; doesn't allow user to change the text size in all browsers; useful when physical size of output is known.</li>
+                <li>Relative: sets the text size relative to surrounding elements; allows user to change the text in all browsers.</li>
+                <hr>
+                <li>Setting the text size with pixels gives you full control over the text size.</li>
+                <li>Allows users to resize text. 1em = current font size. Default text size is 16px. Still problems in older browsers, but is used by lots of developers. Formula: px/16=em. </li>
+                <hr>
+                <li>The font-weight property specifies the weight of a font. Value can be: normal, bold, lighter or a number like 800.</li>
+            </ul>
+            <hr>
+            <h3>CSS Links</h3>
+            <ul>
+                <li>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</li>
+                <li>In addition, links can be styled differently depending on what state they are in.</li>
+                <li>The four links states are: </li>
+                <p class="code">a:link </p>
+                <p>↑ a normal, unvisited link</p>
+                <hr>
+                <p class="code"> a:visited</p>
+                <p>↑ a link the user has visited</p>
+                <hr>
+                <p class="code">a:hover</p>
+                <p>a link when the user mouses over it</p>
+                <hr>
+                <p class="code">a:active</p>
+                <p>a link the moment it is clicked</p>
+            </ul>
+            <hr>
+            <h3>CSS Combinators</h3>
+            <hr>
+            <ul>
+                <li>A combinator is something that explains the relationship between the selectors.</li>
+                <hr>
+                <li>Descendant Selector</li>
+                <li>The descendant selector matches all elements that are descendants of a specified element.</li>
+                <li>Example of the Descendant Selector:</li>
+                <p class="code">div p { <br>
+                    background-color: yellow; <br>
+                    }</p>
+                <hr>
+                <li>The child selector selects all elements that are the children of a specified element.</li>
+                <li>Example of the Child Selector:</li>
+                <p class="code">div > p { <br>
+                    background-color: yellow; <br>
+                    }</p>
+                <hr>
+                <li>The adjacent sibling selector is used to select an element that is directly after another specific element.</li>
+                <li>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</li>
+                <li>The following example selects the first <p> element that are placed immediately after <div> elements:</li>
+                <p class="code">div + p { <br>
+                    background-color: yellow; <br>
+                    }</p>
+                <hr>
+                <li>The general sibling selector selects all elements that are next siblings of a specified element.</li>
+                <li>The following example selects all <p> elements that are next siblings of <div> elements: </li>
+                <p class="code">div ~ p { <br>
+                    background-color: yellow; <br>
+                    }</p>
+            </ul>
+            <hr>
+            <h3>Pseudo Classes</h3>
+            <hr>
+            <ul>
+                <li>A pseudo-class is used to define a special state of an element.</li>
+                <li>Syntax of a Pseudo Class:</li>
+                <p class="code">selector:pseudo-class { <br>
+                    property: value; <br>
+                    }</p>
+                <hr>
+                <li>An Anchor Pseudo Class are states of links: See Links description.</li>
+                <hr>
+                <li>Hover on an element means, that when you hover over it, the properties of the class are shown.</li>
+                <hr>
+                <li>The :first-child pseudo-class matches a specified element that is the first child of another element.</li>
             </ul>
             <h3>What is CSS?</h3>
             <ul>
