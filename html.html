@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <ul class="navbar fixed">
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="cheatsheet.html">Web</a></li>
+            <li class="navbar active"><a href="html.html">HTML</a></li>
+            <li class="navbar"><a href="css.html">CSS</a></li>
+            <li class="navbar" style="float:right"><a href="index.html">Cheatsheet by Laurin Topolanek</a></li>
+        </ul>
+
+        <ul class="navbar">
+            <li class="navbar sectionbar"><a href="#html-basics">Basics</a></li>
+            <li class="navbar sectionbar"><a href="#html-doctype-declaration">The &lt;!DOCTYPE&gt; Declaration</a></li>
+            <li class="navbar sectionbar"><a href="#html-head">Head</a></li>
+            <li class="navbar sectionbar"><a href="#html-headings">Headings</a></li>
+            <li class="navbar sectionbar"><a href="#html-paragraphs">Paragraphs</a></li>
+            <li class="navbar sectionbar"><a href="#html-links">Links</a></li>
+            <li class="navbar sectionbar"><a href="#html-images">Images</a></li>
+            <li class="navbar sectionbar"><a href="#html-attributes">Attributes</a></li>
+            <li class="navbar sectionbar"><a href="#html-comments">Comments</a></li>
+        </ul>
+
+        <section class="topic">
+            <h2 class="overview">HTML</h2>
+            <hr>
+
+            <h3 id="html-basics">Basics</h3>
+            <ul>
+                <li>An HTML document must start with a &lt;DOCTYPE html&gt; declaration and normally begins and ends with an &lt;html&gt;.</li>
+                <li>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</li>
+                <li>The visible part of the page is in &lt;body&gt; and the data which the browser need is in &lt;head&gt;.</li>
+            </ul>
+            <hr>
+
+            <h3 id="html-doctype-declaration">The &lt;!DOCTYPE&gt; Declaration</h3>
+            <ul>
+                <li>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags).</li>
+                <li>The &lt;!DOCTYPE&gt; declaration is not case sensitive.</li>
+                <li>The &lt;!DOCTYPE&gt; declaration for HTML5 is:</li>
+                <p class="code">&lt;!DOCTYPE html&gt;</p>
+            </ul>
+            <hr>
+
+            <h3 id="html-head">HTML Head</h3>
+            <ul>
+                <li>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</li>
+                <li>HTML metadata is data about the HTML document. Metadata is not displayed.</li>
+                <li>Metadata typically define the document title, character set, styles, scripts, and other meta information.</li>
+                <hr>
+                <li>The &lt;title&gt; element defines the title of the document. </li>
+                <li> The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</li>
+                <li>The &lt;title&gt; element is required in HTML documents!</li>
+                <li>The content of a page title is very important for search engine optimization (SEO)!</li>
+                <li> The page title is used by search engine algorithms to decide the order when listing pages in search results.</li>
+                <hr>
+                <li>The &lt;title&gt; element:</li>
+                <ul>
+                    <li>defines a title in the browser toolbar</li>
+                    <li>provides a title for the page when it is added to favorites</li>
+                    <li>displays a title for the page in search engine-results</li>
+                </ul>
+            </ul>
+            <hr>
+
+            <h3 id="html-headings">HTML Headings</h3>
+            <ul>
+                <li>HTML headings are titles or subtitles that you want to display on a webpage.</li>
+                <li>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</li>
+                <li>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading:</li>
+                <p class="code"><h1>This is heading 1</h1></p>
+                <p class="code"><h2>This is heading 2</h2></p>
+                <p class="code"><h3>This is heading 3</h3></p>
+                <li>&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</li>
+            </ul>
+            <hr>
+
+            <h3 id="html-paragraphs">HTML Paragraphs</h3>
+            <ul>
+                <li>HTML paragraphs are defined with the &lt;p&gt; tag:</li>
+                <p class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                <p class="code">&lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
+                <li>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</li>
+            </ul>
+            <hr>
+
+            <h3 id="html-links">HTML Links</h3>
+            <ul>
+                <li>HTML links are hyperlinks.</li>
+                <li>You can click on a link and jump to another document.</li>
+                <li>When you move the mouse over a link, the mouse arrow will turn into a little hand.</li>
+                <li>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</li>
+                <p class="code"> &lt;a href="https://www.youtube.com"&gt;This is a link&lt;/a&gt;</p>
+                <li>The link's destination is specified in the href attribute.</li>
+                <li>Attributes are used to provide additional information about HTML elements.</li>
+            </ul>
+            <hr>
+
+            <h3 id="html-images">HTML Images</h3>
+            <ul>
+                <li>Images can improve the design and the appearance of a web page.</li>
+                <li>The HTML &lt;img&gt; tag is used to embed an image in a web page.</li>
+                <li>Images are not technically inserted into a web page; images are linked to web pages.</li>
+                <li>The &lt;img&gt; tag creates a holding space for the referenced image.</li>
+                <li>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</li>
+                <li>The &lt;img&gt; tag has two required attributes:</li>
+                <p>1. src - Specifies the path to the image</p>
+                <p>2. alt - Specifies an alternate text for the image</p>
+                <li>HTML images are defined with the &lt;img&gt; tag.</li>
+                <li>The source file (src), alternative text (alt), width, and height are provided as attributes:</li>
+                <p class="code"> &lt;img src="cat.jpg" alt="Cats.com" width="104" height="142"&gt;</p>
+                <li>Syntax:</li>
+                <p class="code"> &lt;img src="url" alt="alternatetext"&gt; </p>
+                <li>To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag:</li>
+                <p class="code"> &lt;a href="default.asp"&gt; <br>
+                    &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt; <br>
+                &lt;/a&gt;
+                </p>
+            </ul>
+            <hr>
+
+            <h3 id="html-attributes">HTML Attributes</h3>
+            <ul>
+                <li>HTML attributes provide additional information about HTML elements.</li>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li>Attributes are always specified in the start tag</li>
+                <li>Attributes usually come in name/value pairs like: name="value"</li>
+            </ul>
+            <hr>
+
+            <h3 id="html-comments">HTML Comments</h3>
+            <ul>
+                <li>HTML comments are not displayed in the browser, but they can help document your HTML source code.</li>
+                <li>Comments can be used to hide content.</li>
+                <li>This can be helpful if you hide content temporarily.</li>
+                <li>There are two ways to comment:</li>
+
+                <p class="code">1.: <br>&lt;!-- Write your comments here --&gt;</p>
+                <p class="code">2.: <br>/* <br> Write your comments here <br> */</p>
+            </ul>
+            <hr>
+        </section>
+    </body>
+</html>
