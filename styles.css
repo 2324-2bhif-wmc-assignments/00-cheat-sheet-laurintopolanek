@@ -64,13 +64,13 @@ li.navbar a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: 0.3s;
+    //transition: 0.3s;
 }
 
 /* Navbar Hover - changes the hover color for the page selection */
 li.navbar a:hover{
     background-color: #111;
-    width: 100px;
+    //width: 70px;
 }
 
 /* Sectionbar Hover - changes the hover color for the sections*/
