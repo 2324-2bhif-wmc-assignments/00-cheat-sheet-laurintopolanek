@@ -1,4 +1,5 @@
-.body{
+
+.body {
     font-family: "Century Gothic", Arial, sans-serif;
 }
 
@@ -64,7 +65,7 @@ li.navbar a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    //transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Navbar Hover - changes the hover color for the page selection */
@@ -92,11 +93,11 @@ li.sectionbar a:hover{
 /*NAVBAR END*/
 
 /* Style for a cool code look */
-.code{
+.code {
     font-family: Consolas, Arial, sans-serif;
 }
 
-.Tomato{
+.Tomato {
     color: tomato;
 }
 
