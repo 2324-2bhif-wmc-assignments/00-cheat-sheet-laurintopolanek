@@ -71,7 +71,6 @@ li.navbar a{
 /* Navbar Hover - changes the hover color for the page selection */
 li.navbar a:hover{
     background-color: #111;
-    //width: 70px;
 }
 
 /* Sectionbar Hover - changes the hover color for the sections*/
@@ -107,4 +106,13 @@ li.sectionbar a:hover{
 
 .MediumSeaGreen{
     color: MediumSeaGreen;
+}
+
+td:first-child {
+    color: #e82e6d;
+}
+
+
+td.hover-color a:hover {
+    color: dodgerblue;
 }
