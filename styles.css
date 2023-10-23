@@ -115,3 +115,7 @@ td:first-child {
 td.hover-color a:hover {
     color: dodgerblue;
 }
+
+.scheme-picture {
+    margin-left: 30px;
+}
