@@ -128,3 +128,7 @@ table, th, td{
 th, td {
     padding: 15px;
 }
+
+.font-weight-bold {
+    font-weight: bold;
+}

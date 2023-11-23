@@ -29,6 +29,7 @@
       <li class="navbar sectionbar"><a href="#css-pseudo-classes">Pseudo Classes</a></li>
       <li class="navbar sectionbar"><a href="#css-advanced">CSS Advanced</a></li>
       <li class="navbar sectionbar"><a href="#css-block-and-inline-elements">Block and Inline Elements</a></li>
+      <li class="navbar sectionbar"><a href="#css-animations">Animations</a></li>
     </ul>
 
     <section class="topic">
@@ -309,7 +310,55 @@
       <hr>
       <h3 id="css-block-and-inline-elements">Block and Inline Elements</h3>
       <ul>
-        <li></li>
+        <li class="font-weight-bold">Block Elements:</li>
+        <li>Example of Block-Elements: &lt;p&gt;, &lt;div&gt;</li>
+        <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li>
+        <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li>
+      </ul>
+      <ul>
+        <li class="font-weight-bold">Inline Elements:</li>
+        <li>An inline element does not start on a new line.</li>
+        <li>An inline element only takes up as much width as necessary.</li>
+      </ul>
+      <hr>
+
+      <h3 id="css-animations">Animations</h3>
+      <hr>
+      <ul>
+        <li>An animation lets an element gradually change from one style to another.</li>
+        <li>You can change as many CSS properties you want, as many times as you want.</li>
+        <li>Keyframes hold what styles the element will have at certain times.</li>
+        <li>When you specify CSS styles inside the <b>@keyframes</b> rule, the animation will gradually change from the current style to the new style at certain times.</li>
+      </ul>
+      <ul>
+        <li class="font-weight-bold">How to animate an image:</li>
+        <li>The image needs an animation name f.e. <b>animation-name: rainbow</b></li>
+        <li class="font-weight-bold">Example: </li>
+        <li class="code">@keyframes rainbow { <br>
+          0% { <br>
+          width: 50px; <br>
+          height: 50px; <br>
+          } <br>
+          <br>
+          60% { <br>
+          width: 150px; <br>
+          height: 200px; <br>
+          filter: blur(30); <br>
+          transform: translate(10rem, 10rem); <br>
+          } <br>
+          <br>
+          90% { <br>
+          width: 200px; <br>
+          height: 200px; <br>
+          rotate: 60deg; <br>
+          filter: sepia(100); <br>
+          <br>
+          } <br>
+          <br>
+          100% { <br>
+          background-color: green; <br>
+          rotate: 360deg; <br>
+          } </li>
       </ul>
     </section>
   </body>
