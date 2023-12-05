@@ -1,0 +1,24 @@
+.coffee-cup-animation {
+    animation-name: spin;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.image-properties {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+@keyframes spin {
+    0% {
+        width: 400px;
+    }
+
+
+
+    100% {
+        rotate: 360deg;
+    }
+}
