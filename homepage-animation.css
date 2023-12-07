@@ -1,6 +1,6 @@
 .coffee-cup-animation {
     animation-name: spin;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
