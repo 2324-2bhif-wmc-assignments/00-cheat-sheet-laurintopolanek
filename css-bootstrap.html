@@ -3,34 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <title>Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <ul class="navbar fixed">
-        <li class="navbar"><a href="index.html">Home</a></li>
-        <li class="navbar"><a href="www.html">Web</a></li>
-        <li class="navbar"><a href="html.html">HTML</a></li>
-        <li class="navbar"><a href="css.html">CSS</a></li>
-        <li class="navbar active"><a href="css-bootstrap.html">Bootstrap</a></li>
-        <li class="navbar"><a href="extra_infos.html">Extra Infos</a></li>
-        <li class="navbar" style="float:right"><a href="about_me.html">Cheatsheet by Laurin Topolanek</a></li>
-    </ul>
+        <ul class="navbar fixed">
+            <li class="navbar"><a href="index.html">Home</a></li>
+            <li class="navbar"><a href="www.html">Web</a></li>
+            <li class="navbar"><a href="html.html">HTML</a></li>
+            <li class="navbar"><a href="css.html">CSS</a></li>
+            <li class="navbar active"><a href="css-bootstrap.html">Bootstrap</a></li>
+            <li class="navbar"><a href="extra_infos.html">Extra Infos</a></li>
+            <li class="navbar" style="float:right"><a href="about_me.html">Cheatsheet by Laurin Topolanek</a></li>
+        </ul>
 
-    <ul class="navbar">
-        <li class="navbar sectionbar"><a href="#css-syntax">Syntax</a></li>
-        <li class="navbar sectionbar"><a href="#css-selectors">Selectors</a></li>
-        <li class="navbar sectionbar"><a href="#css-colors">Colors</a></li>
-        <li class="navbar sectionbar"><a href="#css-backgrounds">Backgrounds</a></li>
-        <li class="navbar sectionbar"><a href="#css-text">Text</a></li>
-        <li class="navbar sectionbar"><a href="#css-fonts">Fonts</a></li>
-        <li class="navbar sectionbar"><a href="#css-links">Links</a></li>
-        <li class="navbar sectionbar"><a href="#css-combinators">Combinators</a></li>
-        <li class="navbar sectionbar"><a href="#css-pseudo-classes">Pseudo Classes</a></li>
-        <li class="navbar sectionbar"><a href="#css-advanced">CSS Advanced</a></li>
-        <li class="navbar sectionbar"><a href="#css-block-and-inline-elements">Block and Inline Elements</a></li>
-        <li class="navbar sectionbar"><a href="#css-advanced-animations">Animations</a></li>
-        <li class="navbar sectionbar"><a href="#css-advanced-backgrounds">Backgrounds</a></li>
-        <li class="navbar sectionbar"><a href="#css-advanced-flex">Flex Property</a></li>
-    </ul>
+        <ul class="navbar">
+            <li class="navbar sectionbar"><a href="#css-syntax">Syntax</a></li>
+
+        </ul>
+        <section class="topic">
+            <h1>Bootstrap</h1>
+            <hr>
+
+            <h3>What is Bootstrap?</h3>
+            <ul>
+                <li>Bootstrap is a powerful, feature-packed frontend toolkit.</li>
+                <li>Responsive Design: Bootstrap facilitates the creation of responsive websites, adapting to different screen sizes.</li>
+                <li>Grid System: Provides a flexible layout system for responsive designs.</li>
+                <li>Predefined CSS Components: Includes buttons, forms, and navigation elements for consistent designs.</li>
+                <li>JavaScript Components: Offers interactive elements like modals and dropdowns for enhanced user experience.</li>
+                <li>Customizable Styles: Allows easy customization of component styles to meet project design requirements.</li>
+                <li>Browser Compatibility: Ensures consistent performance across various browsers and devices.</li>
+                <li>Quickstart Templates: Provides pre-built templates for a quick project starting point.</li>
+            <hr>
+
+            <h3>A few Bootstrap Examples:</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-background">
+                            <img src="/assets/images/huskies_snow.jpg" class="mx-auto d-block w-50" alt="American Football Team in the Snow">
+                        </div>
+                        <div class="carousel-item carousel-background">
+                            <img src="/assets/images/karpfen_gerüst.jpg" class="mx-auto d-block w-50" alt="Kids with his teacher on a Klettergerüst">
+                        </div>
+                        <div class="carousel-item carousel-background">
+                            <img src="/assets/images/lask_matulin_topolanek.jpg" class="mx-auto d-block w-50" alt="Two guys in the LASK stadion">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </ul>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

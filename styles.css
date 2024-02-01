@@ -133,3 +133,12 @@ th, td {
 .font-weight-bold {
     font-weight: bold;
 }
+
+/* Modifiers for the Carousel */
+.carousel-background {
+    background-color: grey;
+}
+
+.container-bootstrap {
+    
+}
