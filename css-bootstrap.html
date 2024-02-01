@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="extra_infos.html">Extra Infos</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -43,15 +42,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="#bootstrap-carousel">Carousel</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
         </ul>
-        <section class="topic">
-            <h1 id="bootstrap-basics">Bootstrap</h1>
+
+        <section class="topic container-fluid">
+            <h1 id="bootstrap-basics" class="h2">Bootstrap</h1>
             <hr>
 
             <h3>What is Bootstrap?</h3>
@@ -64,9 +58,12 @@
                 <li>Customizable Styles: Allows easy customization of component styles to meet project design requirements.</li>
                 <li>Browser Compatibility: Ensures consistent performance across various browsers and devices.</li>
                 <li>Quickstart Templates: Provides pre-built templates for a quick project starting point.</li>
+            </ul>
+
             <hr>
+
             <div id="bootstrap-carousel">
-                <h3 id="bootstrap-examples">A few Bootstrap Examples:</h3>
+                <h3 id="bootstrap-examples">A Bootstrap Example:</h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,8 +92,24 @@
                 </div>
             </div>
 
+            <hr>
 
-            </ul>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="www.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="html.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="css.html">3</a></li>
+                    <li class="page-item"><a class="page-link active" href="css-bootstrap.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="extra_infos.html">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="extra_infos.html">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
