@@ -4,236 +4,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="with-device-width, inital-scale=1">
     <title>CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <ul class="navbar fixed">
-      <li class="navbar"><a href="index.html">Home</a></li>
-      <li class="navbar"><a href="www.html">Web</a></li>
-      <li class="navbar"><a href="html.html">HTML</a></li>
-      <li class="navbar active"><a href="css.html">CSS</a></li>
-      <li class="navbar"><a href="css-bootstrap.html">Bootstrap</a></li>
-      <li class="navbar"><a href="javascript.html">JavaScript</a></li>
-      <li class="navbar"><a href="extra_infos.html">Extra Infos</a></li>
-      <li class="navbar" style="float:right"><a href="about_me.html">Cheatsheet by Laurin Topolanek</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="www.html">Web</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html.html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="css.html">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="css-bootstrap.html">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript.html">JavaScript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="extra_infos.html">Extra Infos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#css-syntax">Syntax</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-selectors">Selectors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-colors">Colors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-backgrounds">Backgrounds</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-text">Text</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-fonts">Fonts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-links">Links</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-combinators">Combinators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-pseudo-classes">Pseudo Classes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-advanced">CSS Advanced</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-block-and-inline-elements">Block and Inline Elements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-advanced-animations">Animations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-advanced-backgrounds">Backgrounds</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#css-advanced-flex">Flex Property</a>
+      </li>
     </ul>
 
-    <ul class="navbar">
-      <li class="navbar sectionbar"><a href="#css-syntax">Syntax</a></li>
-      <li class="navbar sectionbar"><a href="#css-selectors">Selectors</a></li>
-      <li class="navbar sectionbar"><a href="#css-colors">Colors</a></li>
-      <li class="navbar sectionbar"><a href="#css-backgrounds">Backgrounds</a></li>
-      <li class="navbar sectionbar"><a href="#css-text">Text</a></li>
-      <li class="navbar sectionbar"><a href="#css-fonts">Fonts</a></li>
-      <li class="navbar sectionbar"><a href="#css-links">Links</a></li>
-      <li class="navbar sectionbar"><a href="#css-combinators">Combinators</a></li>
-      <li class="navbar sectionbar"><a href="#css-pseudo-classes">Pseudo Classes</a></li>
-      <li class="navbar sectionbar"><a href="#css-advanced">CSS Advanced</a></li>
-      <li class="navbar sectionbar"><a href="#css-block-and-inline-elements">Block and Inline Elements</a></li>
-      <li class="navbar sectionbar"><a href="#css-advanced-animations">Animations</a></li>
-      <li class="navbar sectionbar"><a href="#css-advanced-backgrounds">Backgrounds</a></li>
-      <li class="navbar sectionbar"><a href="#css-advanced-flex">Flex Property</a></li>
-    </ul>
 
-    <section class="topic">
-      <h2 class="overview">CSS</h2>
-      <hr>
+    <div class="container-fluid">
+      <section class="topic">
+        <h2 class="h2">CSS</h2>
+        <hr>
 
-      <h3 id="css-syntax">CSS Syntax</h3>
-      <hr>
-      <ul>
-        <li>A CSS rule consists of a selector and a declaration block.</li>
-      </ul>
-      <img class="scheme-picture" src="./assets/images/css_syntax.jpg" alt="CSS Syntax Description" width="350">
-      <ul>
-        <li>The selector points to the HTML element you want to style.</li>
-        <li>The declaration block contains one or more declarations separated by semicolons.</li>
-        <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
-        <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</li>
+        <h3 id="css-syntax">CSS Syntax</h3>
+        <hr>
+        <ul>
+          <li>A CSS rule consists of a selector and a declaration block.</li>
+        </ul>
+        <img class="scheme-picture" src="./assets/images/css_syntax.jpg" alt="CSS Syntax Description" width="350">
+        <ul>
+          <li>The selector points to the HTML element you want to style.</li>
+          <li>The declaration block contains one or more declarations separated by semicolons.</li>
+          <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+          <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</li>
 
-      </ul>
-      <hr>
+        </ul>
+        <hr>
 
-      <h3 id="css-selectors">CSS Selectors</h3>
-      <hr>
-      <ul>
-        <li>The element selector selects HTML elements based on the element name.</li>
-        <li>For example to design &lt;p&gt;.</li>
-      </ul>
+        <h3 id="css-selectors">CSS Selectors</h3>
+        <hr>
+        <ul>
+          <li>The element selector selects HTML elements based on the element name.</li>
+          <li>For example to design &lt;p&gt;.</li>
+        </ul>
 
-      <ul>
-        <li>The grouping selector selects all the HTML elements with the same style definitions.</li>
-        <li>To group selectors, separate each selector with a comma.</li>
-        <li class="code">h1, h2, p { <br>
-          text-align: center; <br>
-          color: red; <br>
-          }
-        </li>
-      </ul>
+        <ul>
+          <li>The grouping selector selects all the HTML elements with the same style definitions.</li>
+          <li>To group selectors, separate each selector with a comma.</li>
+          <li class="code">h1, h2, p { <br>
+            text-align: center; <br>
+            color: red; <br>
+            }
+          </li>
+        </ul>
 
-      <ul>
-        <li>A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */:</li>
-        <li>Comments can be multi-line comments and/or single-line comments.</li>
-      </ul>
-      <hr>
+        <ul>
+          <li>A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */:</li>
+          <li>Comments can be multi-line comments and/or single-line comments.</li>
+        </ul>
+        <hr>
 
-      <h3 id="css-colors">CSS Colors</h3>
-      <hr>
-      <ul>
-        <li>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</li>
-        <li>The syntax for Colors:</li>
+        <h3 id="css-colors">CSS Colors</h3>
+        <hr>
+        <ul>
+          <li>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</li>
+          <li>The syntax for Colors:</li>
         </ul>
         <p style="margin-left: 30px" class="code">&lt;p style="color:DodgerBlue;">This is DodgerBlue/&lt;/p&gt;</p>
-      <ul>
-        <li>A few Examples for colors: </li>
-        <li class="Tomato">Tomato</li>
-        <li class="DodgerBlue">DodgerBlue</li>
-        <li class="MediumSeaGreen">MediumSeaGreen</li>
-      </ul>
-      <hr>
-
-      <h3 id="css-backgrounds">CSS Backgrounds</h3>
-      <hr>
-      <ul>
-        <li>The CSS background properties are used to add background effects for elements.</li>
-        <li>Set a background color:</li>
-
-        <li class="code">body {  <br>
-          background-color: lightblue; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>Set a background image:</li>
-
-        <li class="code">body { <br>
-          background-image: url("paper.gif"); <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
-        <li>Some images should be repeated only horizontally or vertically, or they will look strange.</li>
-        <li>If the image above is repeated only horizontally, the background will look better:</li>
-      </ul>
-      <ul>
-        <li class="code">body { <br>
-          background-image: url("gradient_bg.png");<br>
-          background-repeat: repeat-x; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The background-position property is used to specify the position of the background image.</li>
-        <li>Example to fix the position on the right top:</li>
-      </ul>
-      <ul>
-        <li class="code">body { <br>
-          background-image: url("img_tree.png"); <br>
-          background-repeat: no-repeat; <br>
-          background-position: right top; <br>
-          }</li>
-      </ul>
-      <hr>
-
-      <h3 id="css-text">CSS Text</h3>
-      <hr>
-      <ul>
-        <li>The color property is used to set the color of the text. The color is specified by:
         <ul>
-          <li>a color name - like "red"</li>
-          <li>a HEX value - like "#ff0000"</li>
-          <li>an RGB value - like "rgb(255,0,0)"</li>
+          <li>A few Examples for colors: </li>
+          <li class="Tomato">Tomato</li>
+          <li class="DodgerBlue">DodgerBlue</li>
+          <li class="MediumSeaGreen">MediumSeaGreen</li>
         </ul>
-        </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The text-align property is used to set the horizontal alignment of a text.</li>
-        <li>A text can be left or right aligned, centered, or justified.</li>
-        <li>Example of text-align:</li>
-      </ul>
-      <ul>
-        <li class="code">h1 { <br>
-          text-align: center; <br>
-          }</li>
-      </ul>
-      <ul>
-        <li>The vertical-align property sets the vertical alignment of an element.</li>
-      </ul>
-      <ul>
-        <li class="code">img.a { <br>
-          vertical-align: baseline;
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</li>
-        <li class="code">div { <br>
-          text-align: justify; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The text-decoration-line property is used to add a decoration line to text.</li>
-        <li>You can combine more than one value, like overline and underline to display lines both over and under a text.</li>
-        <li class="code">h1 { <br>
-          text-decoration-line: overline; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The text-transform property is used to specify uppercase and lowercase letters in a text.</li>
-        <li>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</li>
-        <li class="code">p.uppercase { <br>
-          text-transform: uppercase; <br>
-          }
-        </li>
-      </ul>
-      <hr>
+        <hr>
 
-      <h3 id="css-fonts">CSS Fonts</h3>
-      <hr>
-      <ul>
-        <li>Difference Between Serif ans Sans serif:</li>
-        <li>Serif: small stroke at the edges of each letter (create formality and elegance) </li>
-        <li>Sans-Serif: clean lines (modern and minimalistic look) </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>In CSS there are five generic font families:</li>
-        <li>The font-family property is used to specify the font of a text. The font-familiy property normally holds multiple fonts ("fallback" system) to ensure maximum compatability between browsers/operating systems. </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The font-style property most commonly use is to specify italic text. The property has the three values: normal, oblique and italic. (text is shown normally; the text is "leaning"; the text is shown in italics) </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The font-size property sets the size of the text.</li>
-        <li>The font size can be absolute or relative.</li>
-        <li>Absolute: sets the text to a specific size; doesn't allow user to change the text size in all browsers; useful when physical size of output is known.</li>
-        <li>Relative: sets the text size relative to surrounding elements; allows user to change the text in all browsers.</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>Setting the text size with pixels gives you full control over the text size.</li>
-        <li>Allows users to resize text. 1em = current font size. Default text size is 16px. Still problems in older browsers, but is used by lots of developers. Formula: px/16=em. </li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The font-weight property specifies the weight of a font. Value can be: normal, bold, lighter or a number like 800.</li>
-      </ul>
-      <img class="scheme-picture" src="assets/images/serif_sansserif.jpg" alt="Picture of Sans Serif." width="270"/>
-      <hr>
+        <h3 id="css-backgrounds">CSS Backgrounds</h3>
+        <hr>
+        <ul>
+          <li>The CSS background properties are used to add background effects for elements.</li>
+          <li>Set a background color:</li>
 
-      <h3 id="css-links">CSS Links</h3>
-      <ul>
-        <li>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</li>
-        <li>In addition, links can be styled differently depending on what state they are in.</li>
-        <li>The four links states are: </li>
-      </ul>
+          <li class="code">body {  <br>
+            background-color: lightblue; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Set a background image:</li>
+
+          <li class="code">body { <br>
+            background-image: url("paper.gif"); <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>By default, the background-image property repeats an image both horizontally and vertically.</li>
+          <li>Some images should be repeated only horizontally or vertically, or they will look strange.</li>
+          <li>If the image above is repeated only horizontally, the background will look better:</li>
+        </ul>
+        <ul>
+          <li class="code">body { <br>
+            background-image: url("gradient_bg.png");<br>
+            background-repeat: repeat-x; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The background-position property is used to specify the position of the background image.</li>
+          <li>Example to fix the position on the right top:</li>
+        </ul>
+        <ul>
+          <li class="code">body { <br>
+            background-image: url("img_tree.png"); <br>
+            background-repeat: no-repeat; <br>
+            background-position: right top; <br>
+            }</li>
+        </ul>
+        <hr>
+
+        <h3 id="css-text">CSS Text</h3>
+        <hr>
+        <ul>
+          <li>The color property is used to set the color of the text. The color is specified by:
+            <ul>
+              <li>a color name - like "red"</li>
+              <li>a HEX value - like "#ff0000"</li>
+              <li>an RGB value - like "rgb(255,0,0)"</li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The text-align property is used to set the horizontal alignment of a text.</li>
+          <li>A text can be left or right aligned, centered, or justified.</li>
+          <li>Example of text-align:</li>
+        </ul>
+        <ul>
+          <li class="code">h1 { <br>
+            text-align: center; <br>
+            }</li>
+        </ul>
+        <ul>
+          <li>The vertical-align property sets the vertical alignment of an element.</li>
+        </ul>
+        <ul>
+          <li class="code">img.a { <br>
+            vertical-align: baseline;
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</li>
+          <li class="code">div { <br>
+            text-align: justify; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The text-decoration-line property is used to add a decoration line to text.</li>
+          <li>You can combine more than one value, like overline and underline to display lines both over and under a text.</li>
+          <li class="code">h1 { <br>
+            text-decoration-line: overline; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The text-transform property is used to specify uppercase and lowercase letters in a text.</li>
+          <li>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</li>
+          <li class="code">p.uppercase { <br>
+            text-transform: uppercase; <br>
+            }
+          </li>
+        </ul>
+        <hr>
+
+        <h3 id="css-fonts">CSS Fonts</h3>
+        <hr>
+        <ul>
+          <li>Difference Between Serif ans Sans serif:</li>
+          <li>Serif: small stroke at the edges of each letter (create formality and elegance) </li>
+          <li>Sans-Serif: clean lines (modern and minimalistic look) </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>In CSS there are five generic font families:</li>
+          <li>The font-family property is used to specify the font of a text. The font-familiy property normally holds multiple fonts ("fallback" system) to ensure maximum compatability between browsers/operating systems. </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The font-style property most commonly use is to specify italic text. The property has the three values: normal, oblique and italic. (text is shown normally; the text is "leaning"; the text is shown in italics) </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The font-size property sets the size of the text.</li>
+          <li>The font size can be absolute or relative.</li>
+          <li>Absolute: sets the text to a specific size; doesn't allow user to change the text size in all browsers; useful when physical size of output is known.</li>
+          <li>Relative: sets the text size relative to surrounding elements; allows user to change the text in all browsers.</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Setting the text size with pixels gives you full control over the text size.</li>
+          <li>Allows users to resize text. 1em = current font size. Default text size is 16px. Still problems in older browsers, but is used by lots of developers. Formula: px/16=em. </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The font-weight property specifies the weight of a font. Value can be: normal, bold, lighter or a number like 800.</li>
+        </ul>
+        <img class="scheme-picture" src="assets/images/serif_sansserif.jpg" alt="Picture of Sans Serif." width="270"/>
+        <hr>
+
+        <h3 id="css-links">CSS Links</h3>
+        <ul>
+          <li>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</li>
+          <li>In addition, links can be styled differently depending on what state they are in.</li>
+          <li>The four links states are: </li>
+        </ul>
         <p class="code">a:link </p>
         <p>↑ a normal, unvisited link</p>
         <hr>
@@ -245,162 +296,165 @@
         <hr>
         <p class="code">a:active</p>
         <p>a link the moment it is clicked</p>
-      <hr>
+        <hr>
 
-      <h3 id="css-combinators">CSS Combinators</h3>
-      <hr>
-      <ul>
-        <li>A combinator is something that explains the relationship between the selectors.</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>Descendant Selector</li>
-        <li>The descendant selector matches all elements that are descendants of a specified element.</li>
-        <li>Example of the Descendant Selector:</li>
-      </ul>
-      <ul>
-        <li class="code">div p { <br>
-          background-color: yellow; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The child selector selects all elements that are the children of a specified element.</li>
-        <li>Example of the Child Selector:</li>
-        <li class="code">div > p { <br>
-          background-color: yellow; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The adjacent sibling selector is used to select an element that is directly after another specific element.</li>
-        <li>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</li>
-        <li>The following example selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements:</li>
-        <li class="code">div + p { <br>
-          background-color: yellow; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The general sibling selector selects all elements that are next siblings of a specified element.</li>
-        <li>The following example selects all &lt;p&gt; elements that are next siblings of &lt;div&gt; elements: </li>
-        <li class="code">div ~ p { <br>
-          background-color: yellow; <br>
-          }</li>
-      </ul>
-      <hr>
-
-      <h3 id="css-pseudo-classes">Pseudo Classes</h3>
-      <hr>
-      <ul>
-        <li>A pseudo-class is used to define a special state of an element.</li>
-        <li>Syntax of a Pseudo Class:</li>
-        <li class="code">selector:pseudo-class { <br>
-          property: value; <br>
-          }</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>An Anchor Pseudo Class are states of links: See Links description.</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>Hover on an element means, that when you hover over it, the properties of the class are shown.</li>
-      </ul>
-      <hr>
-      <ul>
-        <li>The :first-child pseudo-class matches a specified element that is the first child of another element.</li>
-      </ul>
-      <h2 id="css-advanced">CSS Advanced</h2>
-      <hr>
-      <h3 id="css-block-and-inline-elements">Block and Inline Elements</h3>
-      <ul>
-        <li class="font-weight-bold">Block Elements:</li>
-        <li>Example of Block-Elements: &lt;p&gt;, &lt;div&gt;</li>
-        <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li>
-        <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li>
-      </ul>
-      <ul>
-        <li class="font-weight-bold">Inline Elements:</li>
-        <li>An inline element does not start on a new line.</li>
-        <li>An inline element only takes up as much width as necessary.</li>
-        <li>Inline elements are in the "normal" text flow.</li>
-      </ul>
-      <hr>
-
-      <h3 id="css-advanced-animations">Animations</h3>
-      <hr>
-      <ul>
-        <li>An animation lets an element gradually change from one style to another.</li>
-        <li>You can change as many CSS properties you want, as many times as you want.</li>
-        <li>Keyframes hold what styles the element will have at certain times.</li>
-        <li>When you specify CSS styles inside the <b>@keyframes</b> rule, the animation will gradually change from the current style to the new style at certain times.</li>
-      </ul>
-      <ul>
-        <li><b><i>How to animate an image:</i></b></li>
-        <li>The image/div needs f.e. <b>animation-name: rainbow;</b>, and an <b>animation-duration: 8s;</b> and <b>animation-iteration-count: infinite;</b>.</li>
-        <li>Optional <b>animation-direction: alternate</b></li>
-      </ul>
-      <br>
-      <ul>
-        <li class="font-weight-bold">Example: </li>
-        <li class="code">@keyframes rainbow { <br>
-          0% { <br>
-          width: 50px; <br>
-          height: 50px; <br>
-          } <br>
-          <br>
-          60% { <br>
-          width: 150px; <br>
-          height: 200px; <br>
-          filter: blur(30); <br>
-          transform: translate(10rem, 10rem); <br>
-          } <br>
-          <br>
-          90% { <br>
-          width: 200px; <br>
-          height: 200px; <br>
-          rotate: 60deg; <br>
-          filter: sepia(100); <br>
-          <br>
-          } <br>
-          <br>
-          100% { <br>
-          background-color: green; <br>
-          rotate: 360deg; <br>
-          } </li>
-      </ul>
-      <hr>
-
-      <h3 id="css-advanced-backgrounds">Backgrounds</h3>
-      <hr>
-      <ul>
-        <li><b>Linear Gradient</b></li>
+        <h3 id="css-combinators">CSS Combinators</h3>
+        <hr>
         <ul>
-          <li class="code">#gradientbox { <br>
-            background-image: <br>
-            linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);</li>
-          <br>
-          <li>"to right" is the direction - There are a few directions: "left, right, top, bottom"</li>
-          <li>the different colors are the "color stops"</li>
+          <li>A combinator is something that explains the relationship between the selectors.</li>
         </ul>
-      </ul>
-      <hr>
-      <h3 id="css-advanced-flex">Flex Property</h3>
-      <hr>
-      <ul>
-        <li>The flex property sets the flexible length on flexible items.</li>
-        <li>Flex Boxes are mostly used to make responsive layouts.</li>
-      </ul>
-
-      <div class="code">
+        <hr>
         <ul>
-          <li><b>CSS Syntax:</b></li>
-          <li class="code">flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;</li>
+          <li>Descendant Selector</li>
+          <li>The descendant selector matches all elements that are descendants of a specified element.</li>
+          <li>Example of the Descendant Selector:</li>
         </ul>
-      </div>
-      <hr>
+        <ul>
+          <li class="code">div p { <br>
+            background-color: yellow; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The child selector selects all elements that are the children of a specified element.</li>
+          <li>Example of the Child Selector:</li>
+          <li class="code">div > p { <br>
+            background-color: yellow; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The adjacent sibling selector is used to select an element that is directly after another specific element.</li>
+          <li>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</li>
+          <li>The following example selects the first &lt;p&gt; element that are placed immediately after &lt;div&gt; elements:</li>
+          <li class="code">div + p { <br>
+            background-color: yellow; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The general sibling selector selects all elements that are next siblings of a specified element.</li>
+          <li>The following example selects all &lt;p&gt; elements that are next siblings of &lt;div&gt; elements: </li>
+          <li class="code">div ~ p { <br>
+            background-color: yellow; <br>
+            }</li>
+        </ul>
+        <hr>
 
-    </section>
+        <h3 id="css-pseudo-classes">Pseudo Classes</h3>
+        <hr>
+        <ul>
+          <li>A pseudo-class is used to define a special state of an element.</li>
+          <li>Syntax of a Pseudo Class:</li>
+          <li class="code">selector:pseudo-class { <br>
+            property: value; <br>
+            }</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>An Anchor Pseudo Class are states of links: See Links description.</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Hover on an element means, that when you hover over it, the properties of the class are shown.</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>The :first-child pseudo-class matches a specified element that is the first child of another element.</li>
+        </ul>
+        <h2 id="css-advanced">CSS Advanced</h2>
+        <hr>
+        <h3 id="css-block-and-inline-elements">Block and Inline Elements</h3>
+        <ul>
+          <li class="font-weight-bold">Block Elements:</li>
+          <li>Example of Block-Elements: &lt;p&gt;, &lt;div&gt;</li>
+          <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li>
+          <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li>
+        </ul>
+        <ul>
+          <li class="font-weight-bold">Inline Elements:</li>
+          <li>An inline element does not start on a new line.</li>
+          <li>An inline element only takes up as much width as necessary.</li>
+          <li>Inline elements are in the "normal" text flow.</li>
+        </ul>
+        <hr>
+
+        <h3 id="css-advanced-animations">Animations</h3>
+        <hr>
+        <ul>
+          <li>An animation lets an element gradually change from one style to another.</li>
+          <li>You can change as many CSS properties you want, as many times as you want.</li>
+          <li>Keyframes hold what styles the element will have at certain times.</li>
+          <li>When you specify CSS styles inside the <b>@keyframes</b> rule, the animation will gradually change from the current style to the new style at certain times.</li>
+        </ul>
+        <ul>
+          <li><b><i>How to animate an image:</i></b></li>
+          <li>The image/div needs f.e. <b>animation-name: rainbow;</b>, and an <b>animation-duration: 8s;</b> and <b>animation-iteration-count: infinite;</b>.</li>
+          <li>Optional <b>animation-direction: alternate</b></li>
+        </ul>
+        <br>
+        <ul>
+          <li class="font-weight-bold">Example: </li>
+          <li class="code">@keyframes rainbow { <br>
+            0% { <br>
+            width: 50px; <br>
+            height: 50px; <br>
+            } <br>
+            <br>
+            60% { <br>
+            width: 150px; <br>
+            height: 200px; <br>
+            filter: blur(30); <br>
+            transform: translate(10rem, 10rem); <br>
+            } <br>
+            <br>
+            90% { <br>
+            width: 200px; <br>
+            height: 200px; <br>
+            rotate: 60deg; <br>
+            filter: sepia(100); <br>
+            <br>
+            } <br>
+            <br>
+            100% { <br>
+            background-color: green; <br>
+            rotate: 360deg; <br>
+            } </li>
+        </ul>
+        <hr>
+
+        <h3 id="css-advanced-backgrounds">Backgrounds</h3>
+        <hr>
+        <ul>
+          <li><b>Linear Gradient</b></li>
+          <ul>
+            <li class="code">#gradientbox { <br>
+              background-image: <br>
+              linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);</li>
+            <br>
+            <li>"to right" is the direction - There are a few directions: "left, right, top, bottom"</li>
+            <li>the different colors are the "color stops"</li>
+          </ul>
+        </ul>
+        <hr>
+        <h3 id="css-advanced-flex">Flex Property</h3>
+        <hr>
+        <ul>
+          <li>The flex property sets the flexible length on flexible items.</li>
+          <li>Flex Boxes are mostly used to make responsive layouts.</li>
+        </ul>
+
+        <div class="code">
+          <ul>
+            <li><b>CSS Syntax:</b></li>
+            <li class="code">flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;</li>
+          </ul>
+        </div>
+        <hr>
+      </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
